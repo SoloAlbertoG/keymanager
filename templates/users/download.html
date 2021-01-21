@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">KManager</a>
+  </nav>
+{% endblock  %}
+
+{% block content %}
+
+<div class="card text-white bg-success mt-3 ml-3" style="max-width: 20rem;">
+  <div class="card-header">Descarga</div>
+  <div class="card-body">
+    <h4 class="card-title">Llave privada</h4>
+    <p class="card-text">Descarga tu llave privada y no la compartas con nadie, guárdala, ya que será la unica ocasión que podrás guardarla</p>
+    <a class="p-4" href='/static/private-prueba.pem'><button class="btn btn-primary">Descargar</button></a>
+  </div>
+</div>
+
+<div class="card border-info mt-3 ml-3" style="max-width: 20rem;">
+  <div class="card-header">Descarga</div>
+  <div class="card-body">
+    <h4 class="card-title">Llave pública</h4>
+    <p class="card-text">Descarga y comparte tu llave pública ahora o descargala después de nuestro repositorio.</p>
+    <a class="p-4" href='#'><button class="btn btn-primary">Descargar</button></a>
+  </div>
+</div>
+
+  {% comment %} <a class="p-4" href='/private.pem'><button class="btn btn-primary">Descargar</button></a> {% endcomment %}
+
+{% endblock %}

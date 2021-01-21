@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">KManager</a>
+  </nav>
+{% endblock  %}
+
+{% block content %}
+
+<h2 class="m-5">Área para miembros</h2>
+
+<p class="m-5">Bienvenido <b>{{request.user.username}}</b>, esta página es exclusiva para usuarios registrados.</p>
+
+
+<hr />
+
+<a href="/logout">Cerrar sesión</a>
+
+{% endblock  %}
+  
+

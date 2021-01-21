@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<h2 <i class="m-4"></i>Registrar usuario</h2>
+
+  <form method="POST" class="m-4">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit">Registrar</button>
+  </form>
+
+  <hr />
+
+  <a class="btn btn-primary btn-md m-3" href="login" role="button">Iniciar sesión</a>
+{% endblock  %}
+  
